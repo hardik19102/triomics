@@ -1,0 +1,140 @@
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+.header {
+  flex: 30%;
+  background-color: tomato;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header .inputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.header input {
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+}
+
+.header button {
+  width: 70px;
+  height: 87px;
+  border: none;
+  /* border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px; */
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+
+
+.task {
+  width: 500px;
+  height: 50px;
+  display: flex;
+  color: white;
+  margin: 15px;
+}
+
+.task .content {
+  flex: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task .content span {
+  display: grid;
+  place-items: center;
+  border: 1px solid white;
+  width: 100%;
+  height: 10vh;
+  font-size: 18px;
+  border-right: none;
+  background-color: tomato;
+  border-radius: 10px;
+}
+
+.task button {
+  flex: 20%;
+  height: 100%;
+  border: none;
+  background-color: lightseagreen;
+  /* border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px; */
+  color: white;
+  cursor: pointer;
+} 
+.todoList {
+  flex: 70%;
+  width: 100%;
+  display: grid;
+  height: 70%;
+  /* align-items: center; */
+  /* padding-top: 50px; */
+  /* flex-direction: column; */
+  /* background-color: blue; */
+  grid-template-columns: 33% 33% 34%;
+  /* grid-template-columns: 50%; */
+}
+.activites{
+  background-color: rgb(26, 25, 25);
+  /* grid-template-columns: 50%; */
+  overflow-y: scroll;
+}
+.events{
+  background-color: rgb(26, 25, 25);
+  /* grid-template-columns: 50%; */
+  overflow-y: scroll;
+}
+.draggable-area{
+  background-color: rgb(26, 25, 25);
+  overflow-y: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: tomato; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: tomato; 
+}
+
+.content-box{
+  border-radius: 10px;
+}
